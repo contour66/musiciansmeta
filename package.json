@@ -1,0 +1,32 @@
+{
+  "name": "musicianmeta",
+  "version": "1.0.0",
+  "description": "My Music Metadata",
+  "main": "scripts.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contour66/musiciansmeta.git"
+  },
+  "keywords": [
+    "musician's",
+    "music",
+    "metadata",
+    "my",
+    "data",
+    "catalogue"
+  ],
+  "author": "Zamir Thind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/contour66/musiciansmeta/issues"
+  },
+  "homepage": "https://github.com/contour66/musiciansmeta#readme"
+}
