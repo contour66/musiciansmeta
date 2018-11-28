@@ -1,5 +1,5 @@
 {
-  "name": "musicianmeta",
+  "name": "MyMu",
   "version": "1.0.0",
   "description": "My Music Metadata",
   "main": "scripts.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contour66/musiciansmeta.git"
+    "url": "git+https://github.com/contour66/mymu"
   },
   "keywords": [
     "musician's",
@@ -28,7 +28,7 @@
   "author": "Zamir Thind",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/contour66/musiciansmeta/issues"
+    "url": "https://github.com/contour66/mymu/issues"
   },
-  "homepage": "https://github.com/contour66/musiciansmeta#readme"
+  "homepage": "https://github.com/contour66/mymu#readme"
 }
