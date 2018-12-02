@@ -2,29 +2,46 @@
 <html>
 <head>
 	<title>MyMu</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-	<meta name="google-signin-client_id" content="927443961030-1advahsve7e8fl666chh93lt7631nclo.apps.googleusercontent.com">
-
-	<script type="text/javascript" src="javascript/.js" ></script>
-	<script src= "https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="google-signin-client_id" content="927443961030-419spn209eqtat7nem86p5fkcoqbftfb.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="scripts.js"></script>
 </head>
 
+</head>
 <body>
-	<div id="title-box" class="contatiner-fluid">
-		<header class ="row">
-			<h1 id="title" class="col-md-12"> MyMu- The Musician's Metadata Resource</h1>
-		</header>
-	</div>
-	<!-- <div class="container">
-		<div class="row">
-			<div id="add-content-button" class ="col-md-12 buttons">
-				<button type="button" class="btn btn-primary">My Catalogue</button>
-				<button type="button" class="btn btn-secondary">Add New Song</button>
+	<h1 id="title"> MyMu- The Musician's Metadata Resource</h1>
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	<div class="signInMenu"> 
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#newContentModal"> + Add New Content </button>	
+		<div class="modal fade" id="newContentModal" tabindex="-1" role="dialog" aria-labelledby="newContentModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class ="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="newContentModalLabel">New Content</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+						<button type="button" class="btn btn-primary"> Save Changes</button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div> -->
+		<button class="btn btn-primary">My Catalogue </button>	
+		<!-- <p>Profile</p>
+		<img id="user-pic" class="img-circle" width="100" height="100">
+		<p> Email Address </p>
+		<p id="user-email" class="alert alert-danger"></p> -->
+		<button onclick="signOut()" class="btn btn-danger"> SignOut</button>
+	</div>
+	<div>
+	</div>
 </body>
 </html>
